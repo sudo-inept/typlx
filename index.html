@@ -8,22 +8,41 @@
   </head>
   <body class="bg-primary text-tert overflow-x-hidden">
     
-    <header class="flex justify-between items-center p-5 m-5 relative">
-      <div class="flex items-center bg-white shadow rounded-2xl">
-        <div class=" p-1">
-          <img src="/public/assets/img/logo.webp" alt="Logo" width="30" height="24" class="inline-block align-middle">
+    <header class="flex flex-col gap-y-10 md:flex-row md:justify-between">
+      <div class="flex justify-around p-4">
+        <div class="">
+          <div class="flex items-center rounded-2xl bg-white shadow-2xl">
+            <div class="p-1">
+              <img src="https://static.wixstatic.com/media/c837a6_dfac15e6013240189492d9916e3dc8bf~mv2.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3D_Shape_1.png" alt="Logo" width="30" height="24" class="inline-block align-middle" />
+            </div>
+            <a class="m-3 text-xl font-bold text-gray-800" href="#">Zozzo Games</a>
+          </div>
         </div>
-        <a class="text-gray-800 text-xl font-bold m-3" href="#">Zozzo Games</a>
+        <div class="md:hidden">
+          <button class="mt-1 inline-flex items-center rounded-lg bg-white p-2 text-sm shadow-2xl">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+          <button class="mt-1 inline-flex items-center rounded-lg bg-white p-2 text-sm shadow-2xl">
+            <span class="sr-only">Close main menu</span>
+            <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M14.348 14.849a1.25 1.25 0 001.768-1.768L11.232 10l4.884-4.081a1.25 1.25 0 10-1.768-1.768L9.464 8.536 4.58 4.455a1.25 1.25 0 00-1.768 1.768L7.696 10 2.812 14.081a1.25 1.25 0 001.768 1.768l4.884-4.081 4.884 4.081z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
       </div>
-      <nav class="hidden md:block">
-        <ul class="flex space-x-4">
-          <li><a class="text-gray-800 hover:text-gray-600" href="#">Home</a></li>
-          <li><a class="text-gray-800 hover:text-gray-600" href="#">Games</a></li>
-          <li><a class="text-gray-800 hover:text-gray-600" href="#">Careers</a></li>
-          <li><a class="text-gray-800 hover:text-gray-600" href="#">About</a></li>
-          <li><a class="text-gray-800 hover:text-gray-600" href="#">Contacts</a></li>
-        </ul>
-      </nav>
+  
+      <div class="w-full p-4 md:w-auto ">
+        <nav class="text-white md:pla">
+          <ul class="md:flex">
+            <li class="p-3 text-center text-black"><a class="text-3xl md:text-base" href="#">Home</a></li>
+            <li class="p-3 text-center text-black"><a class="text-3xl md:text-base" href="#">Games</a></li>
+            <li class="p-3 text-center text-black"><a class="text-3xl md:text-base" href="#">Careers</a></li>
+            <li class="p-3 text-center text-black"><a class="text-3xl md:text-base" href="#">About</a></li>
+            <li class="p-3 text-center text-black"><a class="text-3xl md:text-base" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     
     <main class="relative my-10">
@@ -229,8 +248,9 @@
             </div>
           </div>
         </section>
+
+        <div class="m-12 md:order-6"></div>
         
-    
         <section class="relative  mt-96 sm:order-11 ">
           <div class="absolute left-0 top-0 h-[500px] w-full bg-cover bg-fixed bg-center sm:h-full" style="background-image: url('./public/assets/img/parallax.webp');"></div>
 

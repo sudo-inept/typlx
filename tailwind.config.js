@@ -10,6 +10,9 @@ export default {
       lineHeight: {
         '12': '3rem',
       },
+      scale: {
+        '175': '1.75',
+      },
       spacing: {
         '24': '6rem',
       },
